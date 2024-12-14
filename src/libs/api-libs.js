@@ -9,7 +9,7 @@ const getAnimeResponse = (route) => {
         const FetchData = async () => {
             setLoading(true)
             try {
-                const response = await axios.get(`https://kurokami-manhwa-api.vercel.app/api/${route}`)
+                const response = await axios.get(`https://komik.botwa.us.kg/api/${route}`)
                 setData(response.data)
             } catch (error) {
                 console.error("Error :", error)
