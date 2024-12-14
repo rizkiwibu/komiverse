@@ -39,7 +39,7 @@ const ChapterDetail = () => {
         const FetchDetail = async () => {
             setLoadingDetail(true)
             try {
-                const response = await axios.get(`https://kurokami-manhwa-api.vercel.app/api/manhwa-detail/${chapter.split("-chapter")[0]}`)
+                const response = await axios.get(`https://komik.botwa.us.kg/api/manhwa-detail/${chapter.split("-chapter")[0]}`)
                 console.log(response.data)
                 setDataDetail(response.data)
             } catch (error) {
